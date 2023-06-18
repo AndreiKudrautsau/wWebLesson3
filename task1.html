@@ -3,11 +3,14 @@
 <html>
 <body>
     <script>
-        function text(name) {
+        function text_enter() {
+            let name = prompt("Ваше имя?");
+            return name;
+        }
+        function text_exit(name) {
             alert(`Ваше имя - ${name}`);
         }
-        let name = prompt("Ваше имя?");
-        text(name);
+        text_exit(text_enter());
     </script>
 </body>
 </html>
